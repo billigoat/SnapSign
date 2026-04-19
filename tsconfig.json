@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "isolatedModules": true,
+    "lib": [
+      "es2021"
+    ],
+    "module": "commonjs",
+    "noEmit": true,
+    "paths": {
+      "*": [
+        "./Assets/*",
+        "./Packages/*",
+        "./Cache/TypeScript/Src/Packages/*"
+      ],
+      "Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/*": [
+        "./Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/*",
+        "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/*"
+      ],
+      "Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Behavior.lsc/*": [
+        "./Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Behavior.lsc/*",
+        "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Behavior.lsc/*"
+      ],
+      "Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/Tween.lsc/*": [
+        "./Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/Tween.lsc/*",
+        "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/Tween.lsc/*"
+      ],
+      "Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenManager.lsc/*": [
+        "./Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenManager.lsc/*",
+        "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenManager.lsc/*"
+      ],
+      "Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenAlpha.lsc/*": [
+        "./Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenAlpha.lsc/*",
+        "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenAlpha.lsc/*"
+      ],
+      "Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenValue.lsc/*": [
+        "./Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenValue.lsc/*",
+        "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenValue.lsc/*"
+      ]
+    },
+    "skipDefaultLibCheck": true,
+    "target": "es2021",
+    "types": []
+  },
+  "exclude": [
+    "node_modules/typescript/lib/lib.dom.d.ts"
+  ],
+  "include": [
+    "./Cache/TypeScript/lib/LensifyTS/Declarations/**/*.d.ts",
+    "./Assets/**/*.ts",
+    "./Packages/**/*.ts",
+    "./Cache/TypeScript/Src/Packages/**/*.ts",
+    "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Behavior.lsc/**/*.ts",
+    "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/Tween.lsc/**/*.ts",
+    "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenManager.lsc/**/*.ts",
+    "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/**/*.ts",
+    "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenValue.lsc/**/*.ts",
+    "./Cache/TypeScript/Src/Assets/Gesture Trigger__PUT_UNDER_MAIN_CAM.lspkg/Gesture Triggers 5.lspkg/Scripts/Tween/TweenTypes/TweenAlpha.lsc/**/*.ts"
+  ]
+}
