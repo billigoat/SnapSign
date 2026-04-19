@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/64ea5a04-e634-4ac4-928e-c34dbb21f222>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> a333c18f-d3a7-40fd-90e0-e9119a337074
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> a333c18f-d3a7-40fd-90e0-e9119a337074
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> da6c8625-c104-47c0-9a0b-e0949491691e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/71cb5165-1242-4ed5-6060-7267ac67d9b2>
+  PrefabRemaps:
+    []
+  Name: GalleryController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> cf9df33d-731a-4b34-508e-bf3d9f5538ae
+- !<ScriptComponent/cf9df33d-731a-4b34-508e-bf3d9f5538ae>
+  PrefabRemaps:
+    []
+  Name: GalleryController
+  Enabled: true
+  ScriptAsset: !<reference> 609a5e77-af5c-426c-b4c4-52945454da82
+  ScriptInputsDefault:
+    vmlModule: true
+    text: true
+    images: true
+    aslTextures: true
+    secondsPerLetter: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      vmlModule: !<reference.VoiceMLModule> 00000000-0000-0000-0000-000000000000
+      text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      images: !<reference.SceneObject[]>
+        []
+      aslTextures: !<reference.Texture[]>
+        []
+      secondsPerLetter: 0.750000
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/da6c8625-c104-47c0-9a0b-e0949491691e>
+  Prototype: !<ObjectOwner/7c10b2bf-b83b-4aa0-b50d-93bf1f54b0b2>
+    PackagePath: ""
+    objects:
+      - !<own> 71cb5165-1242-4ed5-6060-7267ac67d9b2

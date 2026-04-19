@@ -1,0 +1,142 @@
+- !<AssetImportMetadata/a14e312f-9ea1-4ee3-b74b-22ac67a91033>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 1e44e603-6aa5-49f1-9b5a-10fd40e768d8
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 1e44e603-6aa5-49f1-9b5a-10fd40e768d8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 9fb13bb8-7441-460e-b8f1-64019abadf41
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/9fb13bb8-7441-460e-b8f1-64019abadf41>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 654249e4-dae3-4505-b4aa-9ec8c1b8976a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    aslACurlMaxRatio: false
+    aslAThumbIndexMaxRatio: false
+    aslAThumbIndexSoftMargin: false
+    aslAThumbNearerIndexThanRing: false
+    aslAThumbOutOfPalmMax: false
+    aslBExtendRatio: false
+    aslCMaxStraightRatio: false
+    aslEThumbMaxAbsU: false
+    aslEThumbMaxAbsV: false
+    aslEThumbMaxN: false
+    aslEThumbMinN: false
+    aslHMaxTipToKnuckle: false
+    aslHPairMinPalmN: false
+    aslHThumbMaxAlongIndexNorm: false
+    aslIThumbMaxAlongVersusY: false
+    aslOMaxAvgTipDist: false
+    aslRMaxTipToKnuckle: false
+    aslThumbsUpMinOutOfPalm: false
+    aslUMaxTipToKnuckle: false
+    aslUPairMaxPalmN: false
+    aslYThumbMinAlongVersusI: false
+    aslYThumbMinWristRatio: false
+    aslYThumbRatioGateMinAlong: false
+    classifierMode: false
+    curlMaxRatio: false
+    debugHEachFrame: false
+    debugHOnTap: false
+    debugIEachFrame: false
+    debugIOnTap: false
+    extendRatio: false
+    handController: false
+    knnK: false
+    knnMaxDistance: false
+    knnMaxPerClass: false
+    knnMaxTotalSamples: false
+    knnMinTotalSamples: false
+    knnRecordLabel: false
+    minStableFrames: false
+    mlComponent: false
+    mlInputName: false
+    mlMinConfidence: false
+    mlOutputAreProbabilities: false
+    mlOutputName: false
+    peaceCompanionMaxRatio: false
+    peaceFingerExtendRatio: false
+    peaceSpreadRatio: false
+    phonePinkyExtendRatio: false
+    snapshotIncludePalmLocal: false
+    snapshotMode: false
+    thumbExtendRatio: false
+    watchHand: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - handController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      watchHand: 0
+      minStableFrames: 10
+      extendRatio: 1.180000
+      thumbExtendRatio: 1.120000
+      aslBExtendRatio: 1.080000
+      aslCMaxStraightRatio: 1.550000
+      peaceFingerExtendRatio: 1.050000
+      curlMaxRatio: 1.130000
+      peaceCompanionMaxRatio: 1.260000
+      peaceSpreadRatio: !<float> 1.000000
+      phonePinkyExtendRatio: 1.140000
+      aslAThumbIndexMaxRatio: 0.920000
+      aslAThumbIndexSoftMargin: 0.120000
+      aslACurlMaxRatio: 1.170000
+      aslAThumbNearerIndexThanRing: true
+      aslAThumbOutOfPalmMax: 0.420000
+      aslThumbsUpMinOutOfPalm: 0.550000
+      aslRMaxTipToKnuckle: 0.320000
+      aslHMaxTipToKnuckle: 0.580000
+      aslUMaxTipToKnuckle: 0.980000
+      aslOMaxAvgTipDist: 0.950000
+      snapshotMode: 0
+      snapshotIncludePalmLocal: true
+      classifierMode: 0
+      mlComponent: !<reference.MLComponent> 00000000-0000-0000-0000-000000000000
+      mlInputName: input
+      mlOutputName: output
+      mlMinConfidence: 0.200000
+      mlOutputAreProbabilities: false
+      knnK: 5
+      knnMinTotalSamples: 12
+      knnMaxDistance: !<float> 5.000000
+      knnMaxPerClass: 40
+      knnMaxTotalSamples: 3000
+      knnRecordLabel: a
+      debugHOnTap: false
+      debugHEachFrame: false
+      debugIOnTap: false
+      debugIEachFrame: false
+      aslHPairMinPalmN: 0.460000
+      aslUPairMaxPalmN: 0.400000
+      aslHThumbMaxAlongIndexNorm: 1.180000
+      aslIThumbMaxAlongVersusY: 0.460000
+      aslYThumbMinAlongVersusI: 0.480000
+      aslYThumbMinWristRatio: !<float> 2.000000
+      aslYThumbRatioGateMinAlong: 0.360000
+      aslEThumbMaxAbsU: 1.050000
+      aslEThumbMaxAbsV: 0.650000
+      aslEThumbMinN: -0.450000
+      aslEThumbMaxN: 0.550000
+  ScriptTypes:
+    -
+      {}
