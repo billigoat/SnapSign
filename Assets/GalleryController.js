@@ -14,6 +14,7 @@ options.languageCode = 'en_US';
 
 // --- 1. THE ASL CORE LOGIC ---
 function showWord(word) {
+    // Clean word: Uppercase and remove non-letters
     word = word.toUpperCase().replace(/[^A-Z]/g, "");
 
     for (var i = 0; i < script.images.length; i++) {
@@ -40,27 +41,25 @@ function showWord(word) {
         }
     }
     
-    return word.length; // Return length for timing calculation
+    return word.length;
 }
 
-// --- 2. THE DYNAMIC QUEUE MANAGER ---
+// --- 2. THE QUEUE MANAGER ---
 function processQueue() {
     if (wordQueue.length === 0) {
         isDisplaying = false;
-        // Optional: clear images after the last word is done
-        // showWord(""); 
+        showWord(""); // Clear hands when done
         return;
     }
 
     isDisplaying = true;
-    var nextWord = wordQueue.shift(); 
+    var nextWord = wordQueue.shift();
     
-    // Display the word and get its length
+    // Display the word and get its length for timing
     var wordLength = showWord(nextWord);
 
-    // Calculate dynamic delay: Length * 0.75
-    // Example: "CAT" = 2.25s | "HELLO" = 3.75s
-    var dynamicDelay = wordLength * script.secondsPerLetter;
+    // Dynamic delay: If word is 4 letters, delay is 3 seconds
+    var dynamicDelay = Math.max(0.5, wordLength * script.secondsPerLetter);
 
     var delayEvent = script.createEvent("DelayedCallbackEvent");
     delayEvent.bind(processQueue);
@@ -77,11 +76,8 @@ var onUpdate = (eventArgs) => {
     if (eventArgs.isFinalTranscription) {
         var allWords = transcription.split(" ");
         
-        // Reset queue for the most recent 3 words
-        wordQueue = [];
-
-        var startIndex = Math.max(0, allWords.length - 3);
-        for (var i = startIndex; i < allWords.length; i++) {
+        // Add every word from the sentence to the queue
+        for (var i = 0; i < allWords.length; i++) {
             if (allWords[i].length > 0) {
                 wordQueue.push(allWords[i]);
             }
@@ -93,9 +89,19 @@ var onUpdate = (eventArgs) => {
     }
 };
 
-// --- 4. SETUP EVENTS ---
-script.vmlModule.onListeningUpdate.add(onUpdate);
-script.vmlModule.onListeningEnabled.add(() => script.vmlModule.startListening(options));
-script.vmlModule.onListeningDisabled.add(() => script.vmlModule.stopListening());
+// --- 4. SETUP & ERROR CHECK ---
+if (script.vmlModule) {
+    script.vmlModule.onListeningUpdate.add(onUpdate);
+    script.vmlModule.onListeningEnabled.add(function() {
+        script.vmlModule.startListening(options);
+    });
+    script.vmlModule.onListeningDisabled.add(function() {
+        script.vmlModule.stopListening();
+    });
+} else {
+    print("CRITICAL: Please drag a Voice ML Module into the Script Inspector!");
+}
 
-script.createEvent("OnStartEvent").bind(() => showWord(""));
+script.createEvent("OnStartEvent").bind(function() {
+    showWord("");
+});
